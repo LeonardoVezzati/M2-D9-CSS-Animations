@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- End Stylesheet-->
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/jpg" href="Img/favicon.ico"/>
+    <!-- End Favicon-->
+
+  </head>
+  <body>
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+        <nav class="navbar navbar-expand-lg navbar-light navcolor">
+          <div class="container">
+            <a class="navbar-brand" href="#"><span><img src="Img/favicon.ico" class="navbarlogo"></span><span class="navbartitle">Strivify</span></a>
+            <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon border-white"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto MenuListSpace">
+                <li class="">
+                  <a class="nav-link MenuWhiteLink" href="#Highlighted">Highlighted<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link MenuWhiteLink" href="#Hall Of Shame">Hall Of Shame</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link MenuWhiteLink" href="#Favourites">Favourites</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link MenuWhiteLink" href="#Random Covers">Random Covers</a>
+                </li>      
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+        <div class="bannersection">
+        <div class="container">
+          <div class="row" style="padding: 0;">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="padding: 0;">
+              <img class="bannerimage" src="Img/Background Vinyl Small.png" alt="Background Vinyl Strive School">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="padding: 0;">
+              <div class="jumbotron bannertitlecontainer pt-0 pt-sm-0 pt-md-0 pt-lg-5">
+                <div class="container">
+                  <h1 class="bannertitle">Welcome To Strivify!</h1>
+                  <p class="bannersubtitle">The library of the preferred music of Leonardo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="container">
+         
+          <section style="margin-top: -40px;">
+            <div class="spacebottom">
+              <div class="row">
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Highway 61.PNG" alt="Album Highway 61">
+                      <div class="AlbumInfo">
+                        <h3>Highway 61</h3>
+                        <h4>Bob Dylan</h4>
+                        <span class="badge badge-secondary">Classic Rock</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Out Of Our Heads.PNG" alt="Album Out of Our Heads">
+                      <div class="AlbumInfo">
+                        <h3>Out Of Our Heads</h3>
+                        <h4>Rolling Stones</h4>
+                        <span class="badge badge-secondary">Classic Rock</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/The Dock Of the Bay.PNG" alt="Album The Dock of The Bay">
+                      <div class="AlbumInfo">
+                        <h3>The Dock Of The Bay</h3>
+                        <h4>Otis Redding</h4>
+                        <span class="badge badge-secondary">Classic Soul</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+                      <div class="AlbumInfo">
+                        <h3>Exodus</h3>
+                        <h4>Bob Marley</h4>
+                        <span class="badge badge-secondary">Reggae</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/I Never Loved A Man The Way I Love You - Aretha.PNG" alt="Album I Never Loved A Man The Way I Love You">
+                      <div class="AlbumInfo">
+                        <h3>I Never Loved A Man The Way I Love You</h3>
+                        <h4>Aretha Francklin</h4>
+                        <span class="badge badge-secondary">R&B/Soul</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Just As I Am.PNG" alt="Album Just As I Am">
+                      <div class="AlbumInfo">
+                        <h3>Just As I Am</h3>
+                        <h4>Bill Withers</h4>
+                        <span class="badge badge-secondary">Classic Soul</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Axis- Bold As Love - Jimi Hendrix.PNG" alt="Album Axis:Bold As Love">
+                      <div class="AlbumInfo">
+                        <h3>Axis: Bold As Love</h3>
+                        <h4>Jimi Hendrix</h4>
+                        <span class="badge badge-secondary">Classic Rock</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 cl-md-4 col-lg-3 col-xl-3 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="AlbumCover rotate" src="Img/Abbey Road.PNG" alt="Album Abbey Road">
+                      <div class="AlbumInfo">
+                        <h3>Abbey Road</h3>
+                        <h4>The Beatles</h4>
+                        <span class="badge badge-secondary">Pop</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Exercise 1 D9 -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+          <!--End Exercise 1 D9 -->
+
+          <!--Exercise 5 D9 -->
+          <table id="table">
+            <tr class="fadeOut">
+              <th>Track Order</th>
+              <th>Title</th>
+              <th>Lenght</th>
+              <th>Delete</th>
+            </tr>
+            <tr class="oddRow">
+              <td>1</td>
+              <td>Like A Rolling Stone</td>
+              <td>6:10</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="evenRow">
+              <td>2</td>
+              <td>Tumbstone Blues</td>
+              <td>5:56</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="oddRow">
+              <td>3</td>
+              <td>It Takes A Lot To Laugh, It Takes A Train To Cry</td>
+              <td>4:05</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="evenRow">
+              <td>4</td>
+              <td>From A Buick 6</td>
+              <td>3:16</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="oddRow">
+              <td>5</td>
+              <td>Ballad Of A Thin Man</td>
+              <td>5:57</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="evenRow">
+              <td>6</td>
+              <td>Queen Jane Approximately</td>
+              <td>5:27</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="oddRow">
+              <td>7</td>
+              <td>Highway 61 Revisited</td>
+              <td>3:26</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="evenRow">
+              <td>8</td>
+              <td>Just Like Tom Thumb's Blues</td>
+              <td>5:28</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+            <tr class="oddRow">
+              <td>9</td>
+              <td>Desolation Row</td>
+              <td>11:21</td>
+              <td><button class="btn rowAlbumDeleteButton">Delete</button></td>
+            </tr>
+          </table>
+          <div class="addTrackContainer">
+            <button class="btn addTrackButton">Add Track</button>
+          </div>
+          <!--End Exercise 5 D9 -->
+
+
+    <!-- EXERCISE 4
+            Create a section for the album reviews.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Duration
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+        <p>
+          <a class="CollapsableSection" id="Highlighted" data-toggle="collapse" href="#collapseHighlighted" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Highlighted
+          </a>
+        </p>
+        <div class="collapse" id="collapseHighlighted">
+          <section>
+            <div class="spacebottom">
+              <div>
+                <h2>Albums that made the history</h2>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <img class="AlbumCover rotate" src="Img/Cold Facts.PNG" alt="Album Cold Facts">
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+                  <div>
+                    <h2>Cold Facts</h2>
+                    <h3>Rodriguez</h3>
+                    <p>37 minutes</p>
+                    <ol>
+                      <li>Sugar Man</li>
+                      <li>Only Good For Conversation</li>
+                      <li>Crucify Your Mind</li>
+                      <li>This Is Not A Song, It's An Outburst: The Establishment Blues</li>
+                      <li>Hate Street Dialogues</li>
+                      <li>Forget It</li>
+                      <li>Inner City Blues</li>
+                      <li>I Wonder</li>
+                      <li>...</li>            
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+        <p>
+          <a class="CollapsableSection" id="Hall Of Shame" data-toggle="collapse" href="#collapseTrash" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Trash Kings & Queens
+          </a>
+        </p>
+        <div class="collapse" id="collapseTrash">
+          <section>
+            <div class="spacebottom">
+              <div>
+                <h2>Hall Of Shame</h2>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <img class="AlbumCover rotate" src="Img/Television.PNG" alt="Album Television">
+                </div>
+                <div class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+                  <div>
+                    <h2>Television</h2>
+                    <h3>Paola & Chiara</h3>
+                    <p>1 hour 2 minutes</p>
+                    <ol>
+                      <li>Vamos A Bailar</li>
+                      <li>Amoremidai</li>
+                      <li>Anni Luce</li>
+                      <li>Buona Stella</li>
+                      <li>Viky - Spanish Version</li>
+                      <li>Tu Sei Per Me - Rapino Brothers Mix</li>
+                      <li>Arsenico</li>
+                      <li>Viva El Amor - Radio Edit</li>
+                      <li>...</li>            
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+        </div>
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are a fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+        <p>
+          <a class="CollapsableSection" id="Favourites" data-toggle="collapse" href="#collapseDalla" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Discover Lucio Dalla
+          </a>
+        </p>
+        <div class="collapse" id="collapseDalla">
+              <section>
+                <div class="spacebottom">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <img class="ArtistImage" src="Img/luciodalla.jpg" alt="Lucio Dalla">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div>
+                        <h2>Lucio Dalla</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ea aliquam quasi. Voluptatibus ad suscipit ex tempore? Ad quidem distinctio perferendis veritatis? Necessitatibus dicta, incidunt atque ab commodi molestiae voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto velit error deserunt praesentium inventore enim nam, officia dolorem repellat dicta repellendus sed ipsam tenetur commodi sit quis ipsum vero dignissimos!</p>
+                      </div>
+                    </div>
+                  </div>
+      
+              <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h3>Dalla</h3>
+                              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <div style="padding-bottom: 20px; padding-top: 20px;">
+                            <img src="Img/dalla.jpg" class="d-block w-100 AlbumCover rotate" alt="Album Dalla">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h3>Come è Profondo Il Mare</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <div style="padding-bottom: 20px; padding-top: 20px;">
+                            <img src="Img/comeprofondoilmare.jpg" class="d-block w-100 AlbumCover rotate" alt="Album Come è Profondo Il Mare">
+                          </div>
+                        </div>
+                      </div>   
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h3>Lucio Dalla</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <div style="padding-bottom: 20px; padding-top: 20px;">
+                            <img src="Img/luciodallaalbum.jpg" class="d-block w-100 AlbumCover rotate" alt="Album Lucio Dalla">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+      
+            </div>
+          </section>    
+        </div>
+
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+        <p>
+          <a class="CollapsableSection" id="Random Covers" data-toggle="collapse" href="#collapseCovers" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Random Covers
+          </a>
+        </p>
+        <div class="collapse" id="collapseCovers">
+          <section>       
+            <div class="spacebottom">
+            <div>
+              <h2>Just Covers</h2>
+            </div>
+            <div class="row">
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+              <div class="col-4 col-sm-4 cl-md-4 col-lg-3 col-xl-2 mb-5">
+                <img class="AlbumCover2" src="Img/Exodus - Bob Marley.PNG" alt="Album Exodus">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+      </div>
+      
+        <footer class="pb-5">
+          <div class="container">
+            <h2 class="footertitle"><span><img src="Img/favicon.ico" class="navbarlogo"></span>Strivify</h2>
+            <div class="row">
+              <div class="col-6">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae cupiditate libero voluptatum, quos eveniet non assumenda repudiandae ipsa cumque, harum perferendis beatae excepturi impedit ab aperiam possimus neque tempore vel.</p>
+                <ul class="socialiconlist">
+                  <li><i class="fab fa-github-square"></i></li>
+                  <li><i class="fab fa-linkedin"></i></li>
+                  <li><i class="fab fa-facebook-square"></i></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="p-0" class="footerList">
+                  <li class="">
+                    <a class="nav-link MenuWhiteLink" href="#Highlighted">Highlighted<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="nav-link MenuWhiteLink" href="#Hall Of Shame">Hall Of Shame</a>
+                  </li>
+                  <li class="">
+                    <a class="nav-link MenuWhiteLink" href="#Favourites">Favourites</a>
+                  </li>
+                  <li class="">
+                    <a class="nav-link MenuWhiteLink" href="#Random Covers">Random Covers</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form id="footerTextForm">
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label footerLabel">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" readonly class="form-control-plaintext footerInputText" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label footerLabel">Text</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword" placeholder="Get in touch...">
+                </div>
+              </div>
+              <button type="submit" class="btn footerInputButton mb-2">Send Email</button>
+            </form>
+          </div>
+        </footer>
+    <!-- EXTRA:
+            EXERCISE 9
+            Create an album details area that is going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+
+    <!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
+        -->
+    
+
+    <script>
+      let index, table = document.getElementById('table');
+      for (let i = 0; i < table.rows.length; i++) {
+        table.rows[i].cells[3].onclick = function() {
+          index = this.parentElement.rowIndex;
+          table.deleteRow(index);
+          console.log(index);
+        }
+      }
+    </script>
+
+    <script src="https://kit.fontawesome.com/cf8ccbb757.js" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

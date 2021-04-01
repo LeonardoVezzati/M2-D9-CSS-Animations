@@ -1,0 +1,278 @@
+body{
+  background-color: #050505;
+}
+h2{
+  color:#FFFFFF;
+  margin-bottom: 1em;
+}
+h3{
+  color: #ebebeb;
+  font-size:20px;
+}
+h4{
+  color:#383838;
+  font-size: 16px;
+}
+p{
+  color:#ebebeb;
+}
+li{
+  color: #ebebeb;
+}
+.AlbumInfo{
+  margin-top:1em;
+  text-align: center;
+}
+.navcolor{
+  background-color: #000000;
+}
+.navbarlogo{
+  max-width: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px #FFFFFF;
+}
+.navbartitle{
+  font-size:1.5em;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+.AlbumContainer{
+
+}
+.AlbumCover{
+  border-radius:50%;
+  padding:20%;
+  background-color: #000000;
+  max-width:80%;
+  margin:auto;
+  text-align: center;
+  box-shadow: 4px 8px 16px #1d1d1d;
+  display: block;
+}
+.AlbumCover2{
+  max-width:100%;
+  margin:auto;
+  text-align: center;
+  box-shadow: 4px 8px 16px #1d1d1d;
+  display: block;
+  border-radius: 8px;
+}
+.ArtistImage{
+  max-width: 100%;
+  box-shadow: 4px 8px 16px #1d1d1d;
+  border-radius: 8px;
+
+}
+footer{
+  background-color: #000000;
+}
+.footertitle{
+  padding-top:2em;
+}
+.spacebottom{
+  margin-bottom:60px;
+}
+.rotate:hover{
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+.nav-link{
+  color:#FFFFFF;
+}
+.bannerimage{
+  max-width: 100%;
+  padding-top:10%;
+  padding-bottom:10%;
+  text-align: center;
+}
+.bannersection{
+  background-color: #00ff84;
+}
+.bannertitlecontainer{
+  padding-top:10%;
+  padding-bottom:10%;
+}
+.bannertitle{
+  font-size:80px;
+}
+.bannersubtitle{
+  font-size: 26px;
+  font-weight: bold;
+  color:#000000;
+}
+.socialiconlist{
+  padding-left: 0;
+  list-style: none;
+}
+.socialiconlist li{
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 40px;
+  margin-right:12px;
+  transition: 0.6s;
+}
+.socialiconlist li:hover{
+  color: #00ff84;
+  transform: scale(1.2);
+}
+.carousel-caption{
+  bottom: 60%;
+}
+.CollapsableSection{
+  color:#FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  border-top: 1px solid #FFFFFF;
+  display: block;
+  transition: 1s;
+}
+.CollapsableSection:hover{
+  color:#FFFFFF;
+  margin-left: 40px;
+}
+.CollapseAlbumText{
+  text-align: left;
+}
+.CollapseAlbumLink{
+  color: #FFFFFF;
+}
+.CollapseAlbumLink:hover{
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.CollapseAlbumInfo{
+  background-color: #000000;
+  padding:30px;
+  box-shadow: 4px 8px 16px #1d1d1d;
+}
+.MenuWhiteLink{
+  color: #FFFFFF !important;
+}
+.MenuListSpace{
+  margin-left: 20px;
+}
+
+.jumbotron{
+  background-color: #00ff84;
+}
+
+.card{
+  border: none;
+  background-color: transparent;
+}
+/* EXERCISE 1
+      For all Albums we'd like to have a consistent style.
+      Create a class for:
+      - The album container
+      - The album cover
+      - The album title
+      - The album group / singer / dj
+      - The album genre
+      - The album duration
+      - etc
+   */
+
+   tr.oddRow td {
+    background-color: #1d1d1d;
+    color: #FFFFFF;
+    padding: 10px 30px;
+  }
+
+  tr.evenRow td {
+    background-color: #2e2e2e;
+    color: #FFFFFF;
+    padding: 10px 30px;
+  }
+
+  th {
+    color: #FFFFFF;
+    padding: 10px 30px;
+    font-size: 1.2em;
+  }
+
+  .rowAlbumDeleteButton{
+    color: #FFFFFF;
+    background-color: black;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .rowAlbumDeleteButton:hover{
+    color: #FFFFFF;
+    background-color: #383838;
+    border: 1px solid #FFFFFF;
+  }
+
+  .fadeOut{
+    animation: fade-out 0.4s;
+  }
+
+  @keyframes fade-out {
+    0% {
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+
+  .footerInputText{
+    color: black;
+    background-color: #FFFFFF;
+  }
+
+  .footerInputButton{
+    color: #000000;
+    background-color: #00ff84 !important;
+    transition: 0.4s;
+  }
+
+  .footerInputButton:hover{
+    color: #FFFFFF;
+    background-color: #383838;
+    border: 1px solid #FFFFFF;
+  }
+
+  .footerLabel{
+    color: #FFFFFF;
+  }
+
+  .footerList{
+    list-style: none;
+  }
+
+  .addTrackButton{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #383838;
+    border: 1px solid #FFFFFF;
+    transition: 0.4s;
+    display: flex;
+    justify-content: left;
+  }
+
+  .addTrackButton:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    box-shadow: 4px 4px 8px #00ff84;
+  }
+
+  .addTrackContainer{
+    display: flex;
+    justify-content: left;
+  }
